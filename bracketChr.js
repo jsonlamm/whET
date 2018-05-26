@@ -31,3 +31,14 @@
 
 // switch case
 
+let bracketChkr = (str) => {
+
+switch (key) {
+  case value:
+    
+    break;
+
+  default:
+    break;
+}
+};
