@@ -1,18 +1,10 @@
 const deleteEle = (nums, val) => {
-
-  while (nums.indexOf(val) !== -1) {
-
-    if (nums.indexOf(val)) {
+  let i = nums.length;
+  while (i >= 0) {
+    if (nums.indexOf(val) > -1) {
       nums.splice(nums.indexOf(val), 1);
     }
-
+    i--;
   }
-  return nums.length;
+  return nums;
 }
-
-// let collection = [1, 2, 3, 4, 5, 6, 2, 2];
-let collection = [1, 2, 3, 2, 4, 5, 6, 2];
-let val = 2;
-// length = 5
-
-console.log('deleteEle(collection, val) : ', deleteEle(collection, val))
