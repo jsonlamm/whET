@@ -1,7 +1,7 @@
 // switch case
 
 let bracketChkr = (str) => {
-  let stack = [];
+  const stack = [];
   for (let i = 0; i < str.length; i++) {
     const element = str[i];
     switch (element) {
@@ -52,6 +52,6 @@ let bracketChkr = (str) => {
   if (!stack.length) {
     return true;
   } else {
-      return false;
+    return false;
   }
 };
