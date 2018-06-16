@@ -24,9 +24,3 @@ function mealsBody(className, meals) {
   const rows = R.map(R.partial(mealRow, ['stripe-dark']), meals);
   return tbody({ className }, rows);
 }
-
-const node = document.getElementById('app');
-
-const view = mealsBody('', MEALS);
-
-node.appendChild(view);
