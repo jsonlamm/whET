@@ -4,10 +4,15 @@ function sayHi(saluation) {
   };
 }
 
+// partial
+const sayYo = sayHi('yo')
 
-let peeps = ['Martha', 'AJ', 'Bethany'];
-
-const peepGreeter = peeps.map(sayHi('yo'));
+// notes
 // rcon, stringv
 
-console.log(peepGreeter);
+// can map
+// console.log(peepGreeter);
+
+
+const numbersInString = R.compose(R.length, R.filter(isNum), R.split(''));
+
